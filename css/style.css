@@ -2,11 +2,13 @@ body {
   background-color: black;
   /* Downloaded from the Google Fonts site */
   font-family: "Changa One", serif;
+  /* Hide window vertical/horizontal scroll bars */
+  overflow: hidden;
 }
 /* Dynamically scale game board within devices window */
 canvas {
   width: 100vw; 
-  /* height: 100vh;  */
+  height: 100vh; 
 }
 
 #mainDiv {
