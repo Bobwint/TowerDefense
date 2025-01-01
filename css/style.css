@@ -3,9 +3,10 @@ body {
   /* Downloaded from the Google Fonts site */
   font-family: "Changa One", serif;
 }
-
+/* Dynamically scale game board within devices window */
 canvas {
   width: 100vw; 
+  /* height: 100vh;  */
 }
 
 #mainDiv {
