@@ -7,6 +7,21 @@ canvas.height = 768
 c.fillStyle = 'white'
 c.fillRect(0, 0, canvas.width, canvas.height)
 
+// --Game Variables--
+const projectileSpeed = 6
+const buildingLaunchSpeed = 6
+const enemySpeed = 9
+const enemyCoinValue = 10
+const enemyHealthReduction = 20
+const buildingCoinValue = 40
+let enemyCount = 3
+let hearts = 10
+let coins = 100
+
+// Update window starting values to game variables
+document.querySelector('#heartCounter').innerHTML = hearts
+document.querySelector('#coinCounter').innerHTML = coins
+
 // --Building Placement Tiles--
 // Define 2D array
 const placementTilesData2D = []
@@ -51,17 +66,6 @@ function spawnEnemies(spawnCount) {
     console.log(enemies.length)
   }
 }
-
-// --Game Variables--
-const projectileSpeed = 6
-const buildingLaunchSpeed = 6
-const enemySpeed = 9
-const enemyCoinValue = 10
-const enemyHealthReduction = 20
-const buildingCoinValue = 40
-let hearts = 100
-let coins = 100
-let enemyCount = 3
 
 const buildings = []
 let activeTile = undefined

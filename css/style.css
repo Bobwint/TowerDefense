@@ -4,6 +4,10 @@ body {
   font-family: "Changa One", serif;
 }
 
+canvas {
+  width: 100vw; 
+}
+
 #mainDiv {
   position: relative;
   display: inline-block;
